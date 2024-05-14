@@ -4,13 +4,13 @@ import { addToCart } from "../../../redux/orebiSlice";
 
 const ProductInfo = ({ productInfo }) => {
   const highlightStyle = {
-    color: "#d0121a", // Change this to the desired color
-    fontWeight: "bold", // Change this to the desired font weight
+    color: "#d0121a", 
+    fontWeight: "bold", 
   };
 
   const renderDescription = () => {
     if (!productInfo.des) {
-      return null; // or handle accordingly if product.des is not defined
+      return null
     }
 
     const description = productInfo.des.split(/:(.*?)-/).map((part, index) => {
